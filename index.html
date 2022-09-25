@@ -6,9 +6,87 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>The Odin Project- Admin Dashboard</title>
 		<link href="./assets/css/style-compiled.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/7ecdbbe44f.js" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		Testing
+		<div class="drawer drawer-mobile">
+			<input id="dash-drawer" type="checkbox" class="drawer-toggle" />
+
+			<!-- Main Content area -->
+			<div class="drawer-content flex flex-col items-center justify-center bg-base-200">
+				<!-- Page content here -->
+				<label for="dash-drawer" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+				Main body
+			</div>
+
+			<!-- Sidebar/ Drawer -->
+			<div class="drawer-side pb-5 bg-base-200">
+				<label for="dash-drawer" class="drawer-overlay"></label>
+
+				<ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+					<!-- Sidebar content here -->
+					<li class="mb-2">
+						<div class="flex justify-center text-xl text-secondary"><i class="fa-duotone fa-rocket-launch mx-2"></i> Dashboard</div>
+					</li>
+
+					<li class="mb-2">
+						<button class="btn gap-2">
+							<i class="fa-duotone fa-house"></i>
+							Home
+						</button>
+					</li>
+					<li class="mb-2">
+						<button class="btn gap-2">
+							<i class="fa-duotone fa-address-card"></i>
+							Profile
+						</button>
+					</li>
+					<li class="mb-2">
+						<button class="btn gap-2">
+							<i class="fa-duotone fa-messages"></i>
+							Messages
+						</button>
+					</li>
+					<li class="mb-2">
+						<button class="btn gap-2">
+							<i class="fa-duotone fa-clock"></i>
+							History
+						</button>
+					</li>
+					<li class="mb-2">
+						<button class="btn gap-2">
+							<i class="fa-duotone fa-list-check"></i>
+							Tasks
+						</button>
+					</li>
+					<li>
+						<button class="btn gap-2">
+							<i class="fa-duotone fa-users"></i>
+							Communities
+						</button>
+					</li>
+					<div class="divider"></div>
+					<li class="mb-2">
+						<button class="btn gap-2">
+							<i class="fa-duotone fa-gear"></i>
+							Settings
+						</button>
+					</li>
+					<li class="mb-2">
+						<button class="btn gap-2">
+							<i class="fa-duotone fa-square-question"></i>
+							Support
+						</button>
+					</li>
+					<li>
+						<button class="btn gap-2">
+							<i class="fa-duotone fa-shield-keyhole"></i>
+							Privacy
+						</button>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</body>
 	<script src="./assets/js/script.js"></script>
 </html>
