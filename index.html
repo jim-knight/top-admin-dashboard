@@ -13,57 +13,60 @@
 			<input id="dash-drawer" type="checkbox" class="drawer-toggle" />
 
 			<!-- Main Content area -->
-			<div class="drawer-content flex flex-col items-center justify-center bg-base-200">
+			<div class="drawer-content flex flex-col items-center justify-start bg-base-100">
 				<!-- Page content here -->
 				<label for="dash-drawer" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
-				
-                <!-- Header- search -->
-                <div class="navbar bg-base-100 px-10">
-                    <div class="flex-1">
-                        <i class="fa-duotone fa-magnifying-glass mr-4"></i>
-                        <input type="text" placeholder="Search" class="input input-bordered input-primary input-sm w-full max-w-xs" />
-                    </div>
-                    <div class="flex-none">
-                      <ul class="menu menu-horizontal p-0 gap-6">
-                        <li><a class="btn-primary">New</a></li>
-                        <li><a class="btn-primary">Upload</a></li>
-                        <li><a class="btn-primary">Share</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                <!-- Header- user nav -->
-                <div class="navbar bg-base-100 px-10">
-                    <div class="flex-1">
-                        <div class="avatar mr-10">
-                            <div class="w-16 rounded-full">
-                              <img src="https://placeimg.com/192/192/people" />
-                            </div>
-                        </div>
-                        <div class="text-lg font-semibold">
-                            <div class="text-sm font-normal">Hi there,</div>
-                            James Knight (@james)
-                        </div>
-                        
-                    </div>
-                    <div class="flex-none">
-                      <ul class="menu menu-horizontal p-0 gap-6">
-                        <li><a class="btn-primary">New</a></li>
-                        <li><a class="btn-primary">Upload</a></li>
-                        <li><a class="btn-primary">Share</a></li>
-                      </ul>
-                    </div>
-                  </div>
 
+				<!-- Header- search -->
+				<div class="navbar bg-base-200 px-10">
+					<div class="flex-1">
+						<i class="fa-duotone fa-magnifying-glass mr-4"></i>
+						<input type="text" placeholder="Search" class="input input-bordered input-primary input-sm w-full max-w-xs" />
+					</div>
+					<div class="flex-none">
+						<div class="indicator online">
+							<span class="indicator-item badge badge-xs badge-secondary"></span>
+							<button class="btn btn-sm bg-neutral-focus"><i class="fa-duotone fa-bell"></i></button>
+						</div>
+						<div class="avatar mx-6">
+							<div class="w-12 rounded-full mx-2">
+								<img src="./assets/img/32505612.jfif" />
+							</div>
+						</div>
+						<a href="#">James Knight</a>
+					</div>
+				</div>
+				<!-- Header- user nav -->
+				<div class="navbar bg-base-200 px-10 py-4">
+					<div class="flex-1">
+						<div class="avatar mr-6">
+							<div class="w-16 rounded-full">
+								<img src="./assets/img/32505612.jfif" />
+							</div>
+						</div>
+						<div class="text-lg font-semibold">
+							<div class="text-sm font-normal">Hi there,</div>
+							James Knight (@jim-knight)
+						</div>
+					</div>
+					<div class="flex-none">
+						<ul class="menu menu-horizontal p-0 gap-3">
+							<li><a class="btn-primary">New</a></li>
+							<li><a class="btn-primary">Upload</a></li>
+							<li><a class="btn-primary">Share</a></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 
 			<!-- Sidebar/ Drawer -->
-			<div class="drawer-side pb-5 bg-base-200">
+			<div class="drawer-side">
 				<label for="dash-drawer" class="drawer-overlay"></label>
 
-				<ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content gap-2">
+				<ul class="menu p-4 overflow-y-auto w-80 text-base-content gap-2 bg-base-300">
 					<!-- Sidebar content here -->
 					<li class="mb-10">
-						<button class="btn btn-ghost normal-case gap-4 text-xl text-secondary"><i class="fa-duotone fa-rectangles-mixed fa-lg"></i></i> Dashboard</button>
+						<button class="btn btn-ghost normal-case gap-4 text-xl text-secondary"><i class="fa-duotone fa-rectangles-mixed fa-lg"></i> Dashboard</button>
 					</li>
 					<li>
 						<button class="btn gap-2">
