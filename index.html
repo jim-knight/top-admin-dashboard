@@ -16,44 +16,80 @@
 			<div class="drawer-content flex flex-col items-center justify-center bg-base-200">
 				<!-- Page content here -->
 				<label for="dash-drawer" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
-				Main body
+				
+                <!-- Header- search -->
+                <div class="navbar bg-base-100 px-10">
+                    <div class="flex-1">
+                        <i class="fa-duotone fa-magnifying-glass mr-4"></i>
+                        <input type="text" placeholder="Search" class="input input-bordered input-primary input-sm w-full max-w-xs" />
+                    </div>
+                    <div class="flex-none">
+                      <ul class="menu menu-horizontal p-0 gap-6">
+                        <li><a class="btn-primary">New</a></li>
+                        <li><a class="btn-primary">Upload</a></li>
+                        <li><a class="btn-primary">Share</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                <!-- Header- user nav -->
+                <div class="navbar bg-base-100 px-10">
+                    <div class="flex-1">
+                        <div class="avatar mr-10">
+                            <div class="w-16 rounded-full">
+                              <img src="https://placeimg.com/192/192/people" />
+                            </div>
+                        </div>
+                        <div class="text-lg font-semibold">
+                            <div class="text-sm font-normal">Hi there,</div>
+                            James Knight (@james)
+                        </div>
+                        
+                    </div>
+                    <div class="flex-none">
+                      <ul class="menu menu-horizontal p-0 gap-6">
+                        <li><a class="btn-primary">New</a></li>
+                        <li><a class="btn-primary">Upload</a></li>
+                        <li><a class="btn-primary">Share</a></li>
+                      </ul>
+                    </div>
+                  </div>
+
 			</div>
 
 			<!-- Sidebar/ Drawer -->
 			<div class="drawer-side pb-5 bg-base-200">
 				<label for="dash-drawer" class="drawer-overlay"></label>
 
-				<ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content">
+				<ul class="menu p-4 overflow-y-auto w-80 bg-base-100 text-base-content gap-2">
 					<!-- Sidebar content here -->
-					<li class="mb-2">
-						<div class="flex justify-center text-xl text-secondary"><i class="fa-duotone fa-rocket-launch mx-2"></i> Dashboard</div>
+					<li class="mb-10">
+						<button class="btn btn-ghost normal-case gap-4 text-xl text-secondary"><i class="fa-duotone fa-rectangles-mixed fa-lg"></i></i> Dashboard</button>
 					</li>
-
-					<li class="mb-2">
+					<li>
 						<button class="btn gap-2">
 							<i class="fa-duotone fa-house"></i>
 							Home
 						</button>
 					</li>
-					<li class="mb-2">
+					<li>
 						<button class="btn gap-2">
 							<i class="fa-duotone fa-address-card"></i>
 							Profile
 						</button>
 					</li>
-					<li class="mb-2">
+					<li>
 						<button class="btn gap-2">
 							<i class="fa-duotone fa-messages"></i>
 							Messages
 						</button>
 					</li>
-					<li class="mb-2">
+					<li>
 						<button class="btn gap-2">
 							<i class="fa-duotone fa-clock"></i>
 							History
 						</button>
 					</li>
-					<li class="mb-2">
+					<li>
 						<button class="btn gap-2">
 							<i class="fa-duotone fa-list-check"></i>
 							Tasks
@@ -65,14 +101,14 @@
 							Communities
 						</button>
 					</li>
-					<div class="divider"></div>
-					<li class="mb-2">
+					<li></li>
+					<li>
 						<button class="btn gap-2">
 							<i class="fa-duotone fa-gear"></i>
 							Settings
 						</button>
 					</li>
-					<li class="mb-2">
+					<li>
 						<button class="btn gap-2">
 							<i class="fa-duotone fa-square-question"></i>
 							Support
