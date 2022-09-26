@@ -16,7 +16,6 @@
 			<!-- Main Content area -->
 			<div class="drawer-content flex flex-col items-center justify-start">
 				<!-- Page content here -->
-				<label for="dash-drawer" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 
 				<!-- Header- search -->
 				<div class="navbar bg-base-200 px-10">
@@ -29,17 +28,17 @@
 							<span class="indicator-item badge badge-xs badge-secondary"></span>
 							<button class="btn btn-sm bg-neutral-focus"><i class="fa-duotone fa-bell"></i></button>
 						</div>
-						<div class="avatar mx-6">
+						<div class="avatar mx-6 hidden xl:block">
 							<div class="w-12 rounded-full mx-2">
 								<img src="./assets/img/32505612.jfif" />
 							</div>
 						</div>
-						<a href="#">James Knight</a>
+						<a href="#" class="hidden xl:block">James Knight</a>
 					</div>
 				</div>
 				<!-- Header- user nav -->
-				<div class="navbar bg-base-200 px-10 py-4">
-					<div class="flex-1">
+				<div class="w-full flex flex-col lg:flex-row items-center lg:justify-between bg-base-200 px-10 py-4">
+					<div class="flex mb-4 lg:mb-0">
 						<div class="avatar mr-6">
 							<div class="w-16 rounded-full">
 								<img src="./assets/img/32505612.jfif" />
@@ -51,7 +50,8 @@
 						</div>
 					</div>
 					<div class="flex-none">
-						<ul class="flex p-0 gap-4">
+						<ul class="flex flex-wrap justify-center lg:justify-between p-0 gap-4">
+							<label for="dash-drawer" class="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 							<li>
 								<button class="btn gap-2 normal-case"><a href="#">New</a></button>
 							</li>
@@ -158,8 +158,8 @@
 					</div>
 					<aside class="col-span-3 xl:col-span-1 pt-4 xl:pt-0">
 						<h2 class="text-lg font-semibold mb-2">Announcements</h2>
-						<ul id="announcements" class="grid gap-5 bg-base-200 shadow-md p-8 mb-10">
-							<li class="grid w-full rounded place-content-center">
+						<ul id="announcements" class="card grid gap-5 bg-base-200 shadow-md p-8 mb-10">
+							<li class="grid w-full place-content-center">
 								<h3 class="text-base font-semibold capitalize mb-2"><a href="#" class="text-accent hover:text-primary-content">Site maintenance</a></h3>
 								<p class="text-sm">
 									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt vitae consectetur doloremque laborum ipsum doloribus temporibus modi obcaecati, iure soluta, accusantium placeat
@@ -167,7 +167,7 @@
 								</p>
 							</li>
 							<div class="divider"></div>
-							<li class="grid w-full rounded place-content-center">
+							<li class="grid w-full place-content-center">
 								<h3 class="text-base font-semibold capitalize mb-2"><a href="#" class="text-accent hover:text-primary-content">Community share day</a></h3>
 								<p class="text-sm">
 									Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio consequuntur quis odit possimus praesentium, est quo perferendis incidunt itaque perspiciatis saepe asperiores delectus
@@ -175,14 +175,14 @@
 								</p>
 							</li>
 							<div class="divider"></div>
-							<li class="grid w-full rounded place-content-center">
+							<li class="grid w-full place-content-center">
 								<h3 class="text-base font-semibold capitalize mb-2"><a href="#" class="text-accent hover:text-primary-content">Updated privacy policy</a></h3>
 								<p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim numquam maiores repellat ut exercitationem magni soluta nesciunt fugit perferendis ab.</p>
 							</li>
 						</ul>
 
 						<h2 class="text-lg font-semibold mb-2">Trending</h2>
-						<ul id="trending" class="grid gap-5 bg-base-200 shadow-md p-8">
+						<ul id="trending" class="card grid gap-5 bg-base-200 shadow-md p-8">
 							<li class="flex flex-wrap xl:flex-nowrap items-center">
 								<div class="avatar online mr-10">
 									<div class="w-16 rounded-full">
@@ -234,11 +234,11 @@
 			<!-- END Main Content area -->
 
 			<!-- Sidebar/ Drawer -->
-			<div class="drawer-side content-start bg-base-300">
+			<div class="drawer-side">
 				<label for="dash-drawer" class="drawer-overlay"></label>
-				<div>
+				<div class="bg-base-300 overflow-y-auto w-80">
 					<div class="flex align-center justify-center normal-case gap-4 text-xl py-6"><i class="fa-duotone fa-rectangles-mixed !flex items-center"></i> Dashboard</div>
-					<ul class="menu p-4 overflow-y-auto w-80 gap-2">
+					<ul class="menu p-4 gap-2">
 						<!-- Sidebar content here -->
 						<li>
 							<button class="btn gap-2 text-neutral-content">
